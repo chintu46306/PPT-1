@@ -1,0 +1,42 @@
+
+    An execution context is an abstract concept that represents the environment in which JavaScript code is executed. It consists of variables, functions, and other resources that determine the behavior of the code at runtime. Each time a function is called, a new execution context is created.
+
+An execution context can be divided into three main components:
+
+Variable Environment-: The variable environment consists of all the variables, function declarations, and function arguments defined within the current scope. It stores the identifiers and their corresponding values that are accessible during the execution of the code. This component also includes the scope chain, which determines the order in which variables are resolved.
+
+Lexical Environment-: The lexical environment is similar to the variable environment, but it includes additional information related to the lexical structure of the code. It captures information about the parent scopes and their variables, enabling lexical scoping and closure behavior.
+
+This Value-: The this value represents the context in which the current code is being executed. It refers to the object on which a method is called or the object that is currently being constructed by a constructor function. The value of this can vary depending on how a function is invoked.
+ 
+
+ 
+    examlpes are
+
+    1. Global Execution Context
+    2. Function Execution Context
+    3. Eval Execution Context
+    4. Module Execution Context
+    5. Script Execution Context
+    6. Generator Function Execution Context
+    7. Arrow Function Execution Context
+    8. Async Function Execution Context
+    9. Async Generator Function Execution Context
+    10. Class Execution Context
+    11. With Statement Execution Context
+  
+
+
+  example is
+
+  Execution Stack
+----------------------
+|    Function C     |
+----------------------
+|    Function B     |
+----------------------
+|    Function A     |
+----------------------
+| Global Execution  |
+|    Context       |
+----------------

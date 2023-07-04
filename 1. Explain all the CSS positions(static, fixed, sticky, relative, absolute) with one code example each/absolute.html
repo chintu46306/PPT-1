@@ -1,0 +1,41 @@
+
+<!-- 
+    absolute position is a positioning value that allows you to position an element relative to its closest positioned ancestor or the containing block. When an element's position is set to absolute, it is taken out of the normal document flow and positioned based on its ancestor or containing block.
+
+Key characteristics of the absolute position:
+
+Positioned Relative to Ancestor: An element with position: absolute is positioned relative to its closest positioned ancestor. If no ancestor is positioned, it is positioned relative to the initial containing block, which is usually the viewport.
+
+No Impact on Surrounding Elements: When an element is set to absolute position, it is taken out of the normal document flow, and other elements are positioned as if it does not exist. It doesn't affect the positioning of surrounding elements.
+
+Offset Properties: You can use the top, bottom, left, and right properties to precisely position the element relative to its ancestor or containing block. These properties define the distance the element should be moved from its normal position.
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      background-color: lightgray;
+    }
+    
+    .box {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Absolute Position</div>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat sagittis diam, sed efficitur nisi scelerisque vel. Curabitur sed enim eleifend, fringilla risus id, scelerisque mauris.</p>
+</body>
+</html>

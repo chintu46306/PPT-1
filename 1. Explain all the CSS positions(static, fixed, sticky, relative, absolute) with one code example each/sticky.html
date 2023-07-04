@@ -1,0 +1,32 @@
+<!-- 
+     the sticky position is a positioning value that allows an element to stick to a specific position on the screen when scrolling reaches a certain point. It combines characteristics of both relative and fixed positions.
+
+Key characteristics of the sticky position:
+
+Relative and Fixed Behavior: An element with position: sticky is initially positioned according to the normal flow of the document (like relative), but once it reaches the specified scroll threshold, it becomes fixed to its container or the viewport (like fixed).
+
+Scroll Threshold: The top, bottom, left, or right offset properties are used to define the scroll threshold at which the element becomes sticky. Once the scroll position reaches the threshold, the element becomes fixed in its position.
+
+Relative to Container: If the sticky element has a container with a scrollable overflow, it remains sticky within that container. It will only become fixed when the container's scroll position reaches the threshold.
+ -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      position: sticky;
+      top: 100px;
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Sticky Position</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia felis vitae est convallis tempus. Proin hendrerit mollis libero, ac finibus orci gravida et. Sed lacinia sagittis lorem, vitae eleifend urna.</p>
+  </div>
+</body>
+</html>

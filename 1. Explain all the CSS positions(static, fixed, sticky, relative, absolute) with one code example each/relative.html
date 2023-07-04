@@ -1,0 +1,33 @@
+
+<!-- relative position is a positioning value that allows you to position an element relative to its normal position in the document flow. When an element's position is set to relative, you can use offset properties (top, bottom, left, right) to move it from its original position.
+
+Key characteristics of the relative position:
+
+Relative to Normal Flow: An element with position: relative is positioned relative to its normal position in the document flow. It still occupies space in the document and affects the positioning of other elements.
+
+Offset Properties: You can use the top, bottom, left, and right properties to offset the element from its original position. These properties specify the distance the element should be moved in the corresponding direction.
+
+No Impact on Surrounding Elements: When an element is set to relative position, it maintains its space in the document flow, meaning it does not affect the positioning of surrounding elements. Other elements are positioned as if the relative element was still in its original position. 
+
+ -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      position: relative;
+      left: 50px;
+      top: 20px;
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Relative Position</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat sagittis diam, sed efficitur nisi scelerisque vel. Curabitur sed enim eleifend, fringilla risus id, scelerisque mauris.</p>
+</body>
+</html>
